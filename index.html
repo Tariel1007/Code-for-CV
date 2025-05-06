@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study at THUAS - Your Future Starts Here</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">THUAS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#testimonials">Student Stories</a></li>
+                <li><a href="#course-finder">Find Your Course</a></li>
+                <li><a href="#campus">Campus Life</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="nl">NL</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to The Hague University of Applied Sciences</h1>
+            <p>Shape your future in the international city of peace and justice</p>
+            <a href="#programs" class="cta-button">Explore Programs</a>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <h2>Our Study Programs</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>IT & Design</h3>
+                <p>Develop cutting-edge digital solutions</p>
+            </div>
+            <div class="program-card">
+                <i class="fas fa-business-time"></i>
+                <h3>Business</h3>
+                <p>Learn global business practices</p>
+            </div>
+            <div class="program-card">
+                <i class="fas fa-flask"></i>
+                <h3>Technology</h3>
+                <p>Innovation and engineering excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Student Stories</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial active">
+                <img src="https://i.pravatar.cc/150?img=1" alt="Student 1">
+                <p class="quote">"Studying at THUAS opened up incredible opportunities for my international career."</p>
+                <p class="author">- Maria from Spain</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://i.pravatar.cc/150?img=2" alt="Student 2">
+                <p class="quote">"The practical approach to education here is exactly what I was looking for."</p>
+                <p class="author">- John from Canada</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Student 3">
+                <p class="quote">"The multicultural environment at THUAS has enriched my learning experience."</p>
+                <p class="author">- Yuki from Japan</p>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">❮</button>
+                <div class="dots"></div>
+                <button class="next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="course-finder" class="course-finder">
+        <h2>Find Your Course</h2>
+        <div class="finder-container">
+            <div class="filters">
+                <select id="level-filter">
+                    <option value="">Study Level</option>
+                    <option value="bachelor">Bachelor</option>
+                    <option value="master">Master</option>
+                    <option value="minor">Minor</option>
+                </select>
+                <select id="field-filter">
+                    <option value="">Field of Study</option>
+                    <option value="technology">Technology</option>
+                    <option value="business">Business</option>
+                    <option value="health">Healthcare</option>
+                    <option value="it">IT & Design</option>
+                </select>
+                <input type="text" id="search-courses" placeholder="Search courses...">
+            </div>
+            <div class="courses-grid"></div>
+        </div>
+    </section>
+
+    <section id="campus" class="campus">
+        <h2>Campus Life</h2>
+        <div class="campus-features">
+            <div class="feature">
+                <i class="fas fa-globe"></i>
+                <h3>International Community</h3>
+                <p>Join students from over 140 countries</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-city"></i>
+                <h3>Prime Location</h3>
+                <p>Study in the heart of The Hague</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Student Life</h3>
+                <p>Active student associations and events</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="campus-map" class="campus-map">
+        <h2>Explore Our Campus</h2>
+        <div class="map-container">
+            <div class="map" id="campus-interactive-map">
+                <!-- Map will be initialized by JavaScript -->
+            </div>
+            <div class="map-locations">
+                <button class="map-location active" data-location="main">Main Building</button>
+                <button class="map-location" data-location="library">Library</button>
+                <button class="map-location" data-location="sports">Sports Center</button>
+                <button class="map-location" data-location="cafeteria">Cafeteria</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@thuas.nl</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+31 70 445 8888</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Johanna Westerdijkplein 75, 2521 EN Den Haag</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 The Hague University of Applied Sciences. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
